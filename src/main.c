@@ -1,7 +1,13 @@
 #include <stdio.h>
-   int main() {
+   int main(int argc, char * argv) {
+  
+
   double side;
   double area, volume;
+  int main(int argc, char *argv)
+{
+    printf("¡Hola mundo!\n");
+    retorno 0;
 
 
   printf("Enter the side length: ");
