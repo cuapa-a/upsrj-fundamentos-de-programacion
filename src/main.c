@@ -1,31 +1,23 @@
 #include <stdio.h>
-   int main(int argc, char * argv) {
-  
+#include <stdlib.h> // Para abs()
 
-  double side;
-  double area, volume;
-  int main(int argc, char *argv)
-{
-    printf("¡Hola mundo!\n");
-    retorno 0;
+int main() {
+    int numero;
 
+    printf("Ingrese un número entero: ");
 
-  printf("Enter the side length: ");
-  scanf("%lf" , &side);
+    // Validar que la entrada sea un número entero
+    if (scanf("%d", &numero) != 1) {
+        printf("Error: entrada inválida. Debe ingresar un número entero.\n");
+        return 1; // Salir con código de error
+    }
 
+    // Determinar si es par o impar
+    if (numero % 2 == 0) {
+        printf("El número %d es PAR.\n", numero);
+    } else {
+        printf("El número %d es IMPAR.\n", numero);
+    }
 
-  if(side < 0) {
-    printf("Error: the side length must be a positive number.\n");
-    return 1;
-  }
-
-
-  area = side * side;
-  volume = side * side * side;
-
-  printf("Square area: %.2f\n", area);
-  printf("Cube volume: %.2f\n", volume);
-
-  return 0;
-
+    return 0; 
 }
